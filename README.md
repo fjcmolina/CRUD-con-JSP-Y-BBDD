@@ -2,4 +2,4 @@
 
 Gestion de competiciones y participantes de la misma
 
-Index:
+![Index](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/index.PNG)
