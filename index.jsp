@@ -15,7 +15,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+        <link rel="shortcut icon" type="image/x-icon" href="wslfavicon.ico" />
+        
         <title>WSL</title>
 
         <!-- Bootstrap -->
@@ -67,6 +68,6 @@
                     %>                 
                 </table>
             </div>
-                <input type="button" onclick="location.href='pideCompeticion.jsp';" value="Borrar Competicion" style="background:#ff6666" />
+            <input type="button" onclick="location.href = 'pideCompeticion.jsp';" value="Borrar Competicion" style="background:#ff6666" />
     </body>
 </html>

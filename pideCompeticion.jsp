@@ -13,6 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="wslfavicon.ico" />
         <link rel="stylesheet" type="text/css" href="estilo.css" />
         <title>WSL</title>
         
@@ -46,5 +47,7 @@
               conexion.close();
             %>
     </table>
+    <br>
+    <input type="button" onclick="location.href='indez.jsp';" value="Volver Pagina Principal" style="background:orange" />
 </body>
 </html>
