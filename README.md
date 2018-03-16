@@ -1,3 +1,3 @@
-         ## Crud con JSP y Base de Datos
+# CRUD EN JSP
 
-Gestion de competiciones y participantes en ella
+Gestion de competiciones y los participantes de las mismas.
