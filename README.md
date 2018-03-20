@@ -3,7 +3,7 @@
 Gestion de competiciones y participantes de la misma
 
           INDEX
-![Index](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/index.PNG)
+![Index](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/Index.PNG)
 
           BORRA
 ![Borra](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/borra.PNG)
