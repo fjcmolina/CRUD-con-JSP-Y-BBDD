@@ -14,7 +14,7 @@ Gestion de competiciones y participantes de la misma
 
         MODIFICA
 ![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/competicionModificar.PNG)
-![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesModifica.PNG)
+![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesModificar.PNG)
 
         BASE DE DATOS
 ![Base de Datos](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/basedatos.PNG)
