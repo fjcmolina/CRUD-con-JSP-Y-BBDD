@@ -29,7 +29,20 @@ Gestion de competiciones y participantes de la misma
 ![Borra](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesBorra.PNG)
 
 # MODIFICA
+
+   En este caso podemos modificar los datos que queramos de ambas tablas:
+   
+   Modificar competiciones:
+   
 ![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/competicionModificar.PNG)
+
+   Modificar participantes:
+   
 ![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesModificar.PNG)
+
 # BASE DE DATOS
+
+   Aqui entramos el diagrama entidad relacion de la base de datos creada para la realizacion de esta
+   aplicacion crud:
+   
 ![Base de Datos](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/basedatos.PNG)
