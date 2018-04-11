@@ -16,7 +16,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" type="image/x-icon" href="wslfavicon.ico" />
-<link href="estilo2.css" rel="stylesheet"/>
+        <link href="estilo2.css" rel="stylesheet"/>
         <title>WSL</title>
 
         <!-- Bootstrap -->
@@ -49,7 +49,7 @@
                             <td><input type="text" name="LugarCompeticion" size="5"></td>
                             <td><input type="text" name="NumeroParticipantes" size="5"></td>
                             <td><input type="text" name="IdParticipante" size="5"></td>
-                            
+
                             <td><button type="submit" value="Añadir" class="btn btn-primary" style="background: green"><span class="glyphicon glyphicon-plus"></span> Añadir</button></td><td></td></tr>           
                     </form>
 

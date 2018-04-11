@@ -20,12 +20,12 @@
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/wsl2", "root", "root");
           Statement s = conexion.createStatement();
-       
-         String borrado = "DELETE FROM participantes WHERE idParticipantes='" + request.getParameter("idParticipantes")+ "'";
-         //out.print(borrado);
-         s.execute(borrado);
-         
+
+          String borrado = "DELETE FROM participantes WHERE idParticipantes='" + request.getParameter("idParticipantes") + "'";
+          //out.print(borrado);
+          s.execute(borrado);
+
         %>	
-       <script>document.location = "pideParticipantes.jsp"</script>
+        <script>document.location = "pideParticipante.jsp"</script>
     </body>
 </html>

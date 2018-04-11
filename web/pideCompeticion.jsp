@@ -15,7 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="shortcut icon" type="image/x-icon" href="wslfavicon.ico" />
         <link rel="stylesheet" type="text/css" href="estilo.css" />
-<link href="estilo2.css" rel="stylesheet"/>
+        <link href="estilo2.css" rel="stylesheet"/>
 
         <title>WSL</title>
 

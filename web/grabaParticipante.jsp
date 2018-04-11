@@ -1,8 +1,9 @@
 <%-- 
     Document   : grabaParticipante
-    Created on : 10-abr-2018, 13:18:07
+    Created on : 11-abr-2018, 10:49:41
     Author     : Francis
 --%>
+
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.DriverManager"%>
@@ -13,7 +14,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="estilo2.css" rel="stylesheet"/>
+        <link href="estilo2.css" rel="stylesheet"/>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -22,6 +23,7 @@
         <title>WSL</title>
     </head>
     <body>
+
         <%
           Class.forName("com.mysql.jdbc.Driver");
           Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/wsl2", "root", "root");
@@ -39,7 +41,7 @@
           conexion.close();
         %> 
 
-        <div class="alert alert-success" role="alert">Participante Añadida</div>    
+        <div class="alert alert-success" role="alert">Participante Añadido</div>    
         <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button>
 </body>
 </html>

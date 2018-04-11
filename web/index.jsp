@@ -16,7 +16,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="wslfavicon.ico" />
         <title>WSl</title>
 
-        
+
         <link href="estilo2.css" rel="stylesheet"/>
     </head>
     <body>
@@ -24,7 +24,7 @@
 
             <div id="header" > 
                 <div id="titulo">World Surf League</div>
-               
+
             </div>
 
             <div id="nav">
@@ -36,15 +36,15 @@
                 <p>Es el campeonato mundial de surf, que organiza varios eventos donde los clasificados para estas pruebas compiten alrededor del mundo<p>
 
                 <h3>¿Qué puedo hacer en esta pagina?</h3>
-                
-                    <p>En esta pagina podras administrar las competiciones y participantes que estan calsificados en ellas mediante las pestañas de arriba</p>
-                    <center>
-                <img src="imagenes/wsl.jpg" >
-                    </center>
+
+                <p>En esta pagina podras administrar las competiciones y participantes que estan calsificados en ellas mediante las pestañas de arriba</p>
+                <center>
+                    <img src="imagenes/wsl.jpg" >
+                </center>
 
             </div>
 
-           
+
 
         </div>
     </body>

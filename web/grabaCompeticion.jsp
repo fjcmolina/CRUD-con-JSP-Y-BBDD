@@ -13,7 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="estilo2.css" rel="stylesheet"/>
+        <link href="estilo2.css" rel="stylesheet"/>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -37,11 +37,11 @@
             + ", '" + request.getParameter("IdParticipante") + "'"
             + ", '" + request.getParameter("NumeroParticipantes") + "')";
           s.execute(insercion);
-        //out.println(insercion);
+          //out.println(insercion);
           conexion.close();
         %> 
 
         <div class="alert alert-success" role="alert">Competicion Añadida</div>    
         <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button>
-    </body>
+</body>
 </html>
