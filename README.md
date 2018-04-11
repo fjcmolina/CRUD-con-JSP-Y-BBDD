@@ -10,11 +10,11 @@ Gestion de competiciones y participantes de la misma
 
           BORRA
 ![Borra](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/competicionBorrar.PNG)
-![Borra](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesBorrar.PNG)
+![Borra](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesBorra.PNG)
 
         MODIFICA
 ![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/competicionModificar.PNG)
-![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesModificar.PNG)
+![Modifica](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/participantesModifica.PNG)
 
         BASE DE DATOS
 ![Base de Datos](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/basedatos.PNG)
