@@ -56,14 +56,20 @@
                     <%
                       while (listado.next()) {
                         out.println("<tr>");
-                        String idCompeticion =listado.getString("idCompeticion");
+                        String idCompeticion = listado.getString("idCompeticion");
+                        String NombreCompeticion = listado.getString("NombreCompeticion");
+                        String LugarCompeticion = listado.getString("LugarCompeticion");
+                        String NumeroParticipantes = listado.getString("NumeroParticipantes");
+                        String IdParticipante = listado.getString("IdParticipante");
+
                         out.println("<td>" + idCompeticion + "</td> ");
-                        out.println("<td>" + listado.getString("NombreCompeticion") + "</td>");
-                        out.println("<td>" + listado.getString("LugarCompeticion") + "</td>");
-                        out.println("<td>" + listado.getString("NumeroParticipantes") + "</td>");
-                        out.println("<td>" + listado.getString("IdParticipante") + "</td>");
-                        out.println("<td><button style='background: orange'><a href='borraCompeticion.jsp?idCompeticion=" + idCompeticion +"'>Borrar</a></button> "
-                         + "<button style='background: yellow'><a href='modificaCompeticion.jsp'>Modificar</button></td>");
+                        out.println("<td>" + NombreCompeticion + "</td>");
+                        out.println("<td>" + LugarCompeticion + "</td>");
+                        out.println("<td>" + NumeroParticipantes + "</td>");
+                        out.println("<td>" + IdParticipante + "</td>");
+                        out.println("<td><button style='background: orange'><a href='borraCompeticion.jsp?idCompeticion=" + idCompeticion + "'>Borrar</a></button> "
+                          + "<button style='background: yellow'><a href='modificaCompeticion.jsp?idCompeticion=" + idCompeticion + "&?NombreCompeticion=" + NombreCompeticion
+                          + "&?LugarCompeticion=" + LugarCompeticion + "&?NumeroParticipantes=" + NumeroParticipantes + "&?IdParticipante=" + IdParticipante + "'>Modificar</button></td>");
 
                       }
                     %>
@@ -74,7 +80,7 @@
                 </table>
             </div>
             <center>
-                
+
                 <input type="button" onclick="location.href = 'index.jsp';" value="Pagina Principal"  />
             </center>
 
