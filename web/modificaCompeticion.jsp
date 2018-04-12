@@ -30,7 +30,7 @@
                         <label>&nbsp;&nbsp;IdCompeticion:&nbsp;</label><input type="text" size="5" name="idCompeticion" value="<%= request.getParameter("idCompeticion")%>">
                     </div>
                     <div class="form-group">
-                        <label>&nbsp;&nbsp;Nombre de la Competicion:&nbsp;</label><input type="text" size="35" name="NombreCompeticion" value="<%= request.getParameter("NombreCompeticon")%>">
+                        <label>&nbsp;&nbsp;Nombre de la Competicion:&nbsp;</label><input type="text" size="35" name="NombreCompeticion" value="<%= request.getParameter("NombreCompeticion")%>">
                     </div>
                     <div class="form-group">
                         <label>&nbsp;&nbsp;Lugar de la Competicion:&nbsp;</label><input type="text" name="LugarCompeticion" size="20" value="<%= request.getParameter("LugarCompeticion")%>">

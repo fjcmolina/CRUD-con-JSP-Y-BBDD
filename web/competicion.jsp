@@ -68,8 +68,8 @@
                         out.println("<td>" + NumeroParticipantes + "</td>");
                         out.println("<td>" + IdParticipante + "</td>");
                         out.println("<td><button style='background: orange'><a href='borraCompeticion.jsp?idCompeticion=" + idCompeticion + "'>Borrar</a></button> "
-                          + "<button style='background: yellow'><a href='modificaCompeticion.jsp?idCompeticion=" + idCompeticion + "&?NombreCompeticion=" + NombreCompeticion
-                          + "&?LugarCompeticion=" + LugarCompeticion + "&?NumeroParticipantes=" + NumeroParticipantes + "&?IdParticipante=" + IdParticipante + "'>Modificar</button></td>");
+                          + "<button style='background: yellow'><a href='modificaCompeticion.jsp?idCompeticion=" + idCompeticion + "&NombreCompeticion=" + NombreCompeticion
+                          + "&LugarCompeticion=" + LugarCompeticion + "&NumeroParticipantes=" + NumeroParticipantes + "&IdParticipante=" + IdParticipante + "'>Modificar</button></td>");
 
                       }
                     %>

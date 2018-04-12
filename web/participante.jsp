@@ -74,7 +74,7 @@
                         out.println("<td><button style='background: orange'><a href='borraParticipante.jsp?idParticipantes=" + idParticipantes +"'>Borrar</a></button>"
                           + "<button style='background: yellow'>"
                           + "<a href='modificaParticipante.jsp?idParticipantes=" + idParticipantes 
-                          + "&?Nombre=" + Nombre + "&?Edad=" + Edad + "&?Sexo=" + Sexo +"'>Modificar</button></td>");
+                          + "&Nombre=" + Nombre + "&Edad=" + Edad + "&Sexo=" + Sexo +"'>Modificar</button></td>");
                       }
                     %>
                    
