@@ -36,7 +36,10 @@
                         <label>&nbsp;&nbsp;Edad:&nbsp;</label><input type="text" name="Edad" size="20" value="<%= request.getParameter("Edad")%>">
                     </div>
                     <div class="form-group">
-                        <label>&nbsp;&nbsp;Sexo:&nbsp;</label><input type="text" size="5" name="Sexo" value="<%= request.getParameter("Sexo")%>">
+                        <label>&nbsp;&nbsp;Sexo:&nbsp;</label><select name="Sexo">
+                                <option value="Masculino" size="5">Masculino</option>
+                                <option value="Femenino" size="5">Femenino</option>
+                            </select>
                     </div>
 
                     <hr>
