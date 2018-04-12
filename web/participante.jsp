@@ -63,13 +63,18 @@
                       while (listado.next()) {
                         out.println("<tr>");
                         String idParticipantes =listado.getString("idParticipantes");
+                        String Nombre = listado.getString("Nombre") ;
+                        String Edad = listado.getString("Edad");
+                        String Sexo = listado.getString("Sexo");
+                        
                         out.println("<td>" + idParticipantes+ "</td> ");
-                        out.println("<td>" + listado.getString("Nombre") + "</td>");
-                        out.println("<td>" + listado.getString("Edad") + "</td>");
-                        out.println("<td>" + listado.getString("Sexo") + "</td>");
+                        out.println("<td>" + Nombre + "</td>");
+                        out.println("<td>" + Edad + "</td>");
+                        out.println("<td>" + Sexo + "</td>");
                         out.println("<td><button style='background: orange'><a href='borraParticipante.jsp?idParticipantes=" + idParticipantes +"'>Borrar</a></button>"
-                          + "<button style='background: yellow'><a href='modificaParticipante.jsp'>Modificar</button></td>");
-
+                          + "<button style='background: yellow'>"
+                          + "<a href='modificaParticipante.jsp?idParticipantes=" + idParticipantes 
+                          + "&?Nombre=" + Nombre + "&?Edad=" + Edad + "&?Sexo=" + Sexo +"'>Modificar</button></td>");
                       }
                     %>
                    
