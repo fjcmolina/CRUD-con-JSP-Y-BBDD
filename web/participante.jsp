@@ -42,8 +42,8 @@
 
                 <table class="table table-striped">
                     <tr><th>idParticipante</th><th>Nombre </th><th>Edad</th><th>Sexo</th></tr>
-                    <form method="get" action="grabaCompeticion.jsp">
-                        <tr><td><input type="text" name="idParticipante" size="5"></td>
+                    <form method="get" action="grabaParticipante.jsp">
+                        <tr><td><input type="text" name="idParticipantes" size="5"></td>
                             <td><input type="text" name="Nombre" size="25"></td>
                             <td><input type="text" name="Edad" size="5"></td>
                             <td><input type="text" name="Sexo" size="5"></td>
