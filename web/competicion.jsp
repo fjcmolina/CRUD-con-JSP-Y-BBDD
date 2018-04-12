@@ -56,11 +56,14 @@
                     <%
                       while (listado.next()) {
                         out.println("<tr>");
-                        out.println("<td>" + listado.getString("idCompeticion") + "</td> ");
+                        String idCompeticion =listado.getString("idCompeticion");
+                        out.println("<td>" + idCompeticion + "</td> ");
                         out.println("<td>" + listado.getString("NombreCompeticion") + "</td>");
                         out.println("<td>" + listado.getString("LugarCompeticion") + "</td>");
                         out.println("<td>" + listado.getString("NumeroParticipantes") + "</td>");
                         out.println("<td>" + listado.getString("IdParticipante") + "</td>");
+                        out.println("<td><button style='background: orange'><a href='borraCompeticion.jsp?idCompeticion=" + idCompeticion +"'>Borrar</a></button> "
+                         + "<button style='background: yellow'><a href='modificaCompeticion.jsp'>Modificar</button></td>");
 
                       }
                     %>
@@ -71,10 +74,8 @@
                 </table>
             </div>
             <center>
-                <input type="button" onclick="location.href = 'pideCompeticion.jsp';" value="Borrar Competicion" style="background:#ff6666" />
-                <input type="button" onclick="location.href = 'modificaCompeticion.jsp';" value="Modificar Competicion" style="background: yellow" />
-                <br>
-                <input type="button" onclick="location.href = 'index.jsp';" value="Principal"  />
+                
+                <input type="button" onclick="location.href = 'index.jsp';" value="Pagina Principal"  />
             </center>
 
     </body>

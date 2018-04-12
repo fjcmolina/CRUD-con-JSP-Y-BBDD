@@ -51,33 +51,36 @@
                                 <option value="Masculino" size="5">Masculino</option>
                                 <option value="Femenino" size="5">Femenino</option>
                             </select>
+                            
                             </td>
                            
-                            <td><button type="submit" value="Añadir" class="btn btn-primary" style="background: green"><span class="glyphicon glyphicon-plus"></span> Añadir</button></td><td></td></tr>           
-                    
+                            <td><button type="submit" value="Añadir" class="btn btn-primary" style="background: green"><span class="glyphicon glyphicon-plus"></span> Añadir</button>          
+                                
+                            </td></tr> 
                     </form>
-
+                      
                     <%
                       while (listado.next()) {
                         out.println("<tr>");
-                        out.println("<td>" + listado.getString("idParticipantes") + "</td> ");
+                        String idParticipantes =listado.getString("idParticipantes");
+                        out.println("<td>" + idParticipantes+ "</td> ");
                         out.println("<td>" + listado.getString("Nombre") + "</td>");
                         out.println("<td>" + listado.getString("Edad") + "</td>");
                         out.println("<td>" + listado.getString("Sexo") + "</td>");
+                        out.println("<td><button style='background: orange'><a href='borraParticipante.jsp?idParticipantes=" + idParticipantes +"'>Borrar</a></button>"
+                          + "<button style='background: yellow'><a href='modificaParticipante.jsp'>Modificar</button></td>");
 
                       }
                     %>
-
+                   
                     <%
                       conexion.close();
                     %>                 
                 </table>
             </div>
             <center>
-                <input type="button" onclick="location.href = 'pideParticipante.jsp';" value="Borrar Participante" style="background:#ff6666" />
-                <input type="button" onclick="location.href = 'modificaParticipante.jsp';" value="Modificar Participante" style="background: yellow" />
-                <br>
-                <input type="button" onclick="location.href = 'index.jsp';" value="Principal"/>
+       
+                <input type="button" onclick="location.href = 'index.jsp';" value="Pagina Principal"/>
             </center>
     </body>
 </html>
