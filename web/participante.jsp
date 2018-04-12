@@ -46,9 +46,15 @@
                         <tr><td><input type="text" name="idParticipantes" size="5"></td>
                             <td><input type="text" name="Nombre" size="25"></td>
                             <td><input type="text" name="Edad" size="5"></td>
-                            <td><input type="text" name="Sexo" size="5"></td>
-
+                     
+                            <td> <select name="Sexo">
+                                <option value="Masculino" size="5">Masculino</option>
+                                <option value="Femenino" size="5">Femenino</option>
+                            </select>
+                            </td>
+                           
                             <td><button type="submit" value="Añadir" class="btn btn-primary" style="background: green"><span class="glyphicon glyphicon-plus"></span> Añadir</button></td><td></td></tr>           
+                    
                     </form>
 
                     <%
