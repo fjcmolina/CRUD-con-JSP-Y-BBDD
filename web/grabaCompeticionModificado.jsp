@@ -43,7 +43,7 @@
           conexion.close();
         %>
         <br>
-        <div class="alert alert-success" role="alert">Competicion Añadida</div> 
+        <div class="alert alert-success" role="alert">Competicion Modificada</div> 
         <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

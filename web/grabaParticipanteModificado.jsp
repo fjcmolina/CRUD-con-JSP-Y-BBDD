@@ -42,7 +42,7 @@
           conexion.close();
         %>
         <br>
-        <div class="alert alert-success" role="alert">Participante Añadida</div> 
+        <div class="alert alert-success" role="alert">Participante Modificado</div> 
         <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js"></script>
