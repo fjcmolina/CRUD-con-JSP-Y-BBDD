@@ -4,6 +4,7 @@
     Author     : Francis
 --%>
 
+<%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.DriverManager"%>
@@ -37,23 +38,63 @@
                   Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/wsl2", "root", "root");
 
                   Statement s = conexion.createStatement();
-
-                  ResultSet listado = s.executeQuery("SELECT * FROM wsl2.competicion order by idCompeticion");
                 %> 
 
                 <table class="table table-striped">
                     <tr><th>IdCompeticion</th><th>Nombre Competicion</th><th>Lugar Competicion</th><th>Nº Participantes</th><th>IdParticipante</th></tr>
                     <form method="get" action="grabaCompeticion.jsp">
-                        <tr><td><input type="text" name="idCompeticion" size="5"></td>
-                            <td><input type="text" name="NombreCompeticion" size="25"></td>
-                            <td><input type="text" name="LugarCompeticion" size="5"></td>
-                            <td><input type="text" name="NumeroParticipantes" size="5"></td>
-                            <td><input type="text" name="IdParticipante" size="5"></td>
+                        <tr>
+                            <td><input type="text" name="idCompeticion" size="5"></input></td> </input>
+                            <td><input type="text" name="NombreCompeticion" size="25"></input></td>
+
+                            <td>   
+                                <%
+                                  ArrayList<String> lugar = new ArrayList();
+
+                                  lugar.add("Australia");
+                                  lugar.add("Brasil");
+                                  lugar.add("Estados Unidos");
+                                  lugar.add("Indonesia");
+                                  lugar.add("Tahiti");
+                                  lugar.add("Portugal");
+                                  lugar.add("Sudafrica");
+                                %>
+                                <select name="LugarCompeticion">
+                                    <%
+                                      for (String n : lugar) {
+                                        out.println("<option>" + n + "</option>");
+                                      }
+                                    %>  
+                                </select>
+                            </td>
+
+                            <td><input type="text" name="NumeroParticipantes" size="5"></input></td>
+
+                            <td>
+                                <select name="idParticipante">
+
+                                    <%
+                                      ResultSet listado2 = s.executeQuery("SELECT idParticipantes,Nombre FROM wsl2.participantes order by idParticipantes");
+                                      while (listado2.next()) {
+
+                                        String idParticipantes = listado2.getString("idParticipantes");
+
+                                        String Nombre = listado2.getString("Nombre");
+
+                                        out.println("<option value='" + idParticipantes + "'> "+ idParticipantes+ " " + Nombre + "</option>");
+
+                                      }
+                                    %>
+
+                                </select>
+
+                            </td>
 
                             <td><button type="submit" value="Añadir" class="btn btn-primary" style="background: green"><span class="glyphicon glyphicon-plus"></span> Añadir</button></td><td></td></tr>           
                     </form>
 
                     <%
+                      ResultSet listado = s.executeQuery("SELECT * FROM wsl2.competicion order by idCompeticion");
                       while (listado.next()) {
                         out.println("<tr>");
                         String idCompeticion = listado.getString("idCompeticion");

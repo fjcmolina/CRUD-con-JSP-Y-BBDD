@@ -3,6 +3,8 @@
     Created on : 10-abr-2018, 10:15:01
     Author     : Francis
 --%>
+<%@page import="java.util.Scanner"%>
+<%@page import="java.util.HashMap"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.DriverManager"%>
@@ -24,7 +26,6 @@
 
             <div id="header" > 
                 <div id="titulo">World Surf League</div>
-
             </div>
 
             <div id="nav">
@@ -47,5 +48,6 @@
 
 
         </div>
+
     </body>
 </html>

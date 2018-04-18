@@ -46,45 +46,45 @@
                         <tr><td><input type="text" name="idParticipantes" size="5"></td>
                             <td><input type="text" name="Nombre" size="25"></td>
                             <td><input type="text" name="Edad" size="5"></td>
-                     
+
                             <td> <select name="Sexo">
-                                <option value="Masculino" size="5">Masculino</option>
-                                <option value="Femenino" size="5">Femenino</option>
-                            </select>
-                            
+                                    <option value="Masculino" size="5">Masculino</option>
+                                    <option value="Femenino" size="5">Femenino</option>
+                                </select>
+
                             </td>
-                           
+
                             <td><button type="submit" value="Añadir" class="btn btn-primary" style="background: green"><span class="glyphicon glyphicon-plus"></span> Añadir</button>          
-                                
+
                             </td></tr> 
                     </form>
-                      
+
                     <%
                       while (listado.next()) {
                         out.println("<tr>");
-                        String idParticipantes =listado.getString("idParticipantes");
-                        String Nombre = listado.getString("Nombre") ;
+                        String idParticipantes = listado.getString("idParticipantes");
+                        String Nombre = listado.getString("Nombre");
                         String Edad = listado.getString("Edad");
                         String Sexo = listado.getString("Sexo");
-                        
-                        out.println("<td>" + idParticipantes+ "</td> ");
+
+                        out.println("<td>" + idParticipantes + "</td> ");
                         out.println("<td>" + Nombre + "</td>");
                         out.println("<td>" + Edad + "</td>");
                         out.println("<td>" + Sexo + "</td>");
-                        out.println("<td><button style='background: orange'><a href='borraParticipante.jsp?idParticipantes=" + idParticipantes +"'>Borrar</a></button>"
+                        out.println("<td><button style='background: orange'><a href='borraParticipante.jsp?idParticipantes=" + idParticipantes + "'>Borrar</a></button>"
                           + "<button style='background: yellow'>"
-                          + "<a href='modificaParticipante.jsp?idParticipantes=" + idParticipantes 
-                          + "&Nombre=" + Nombre + "&Edad=" + Edad + "&Sexo=" + Sexo +"'>Modificar</button></td>");
+                          + "<a href='modificaParticipante.jsp?idParticipantes=" + idParticipantes
+                          + "&Nombre=" + Nombre + "&Edad=" + Edad + "&Sexo=" + Sexo + "'>Modificar</button></td>");
                       }
                     %>
-                   
+
                     <%
                       conexion.close();
                     %>                 
                 </table>
             </div>
             <center>
-       
+
                 <input type="button" onclick="location.href = 'index.jsp';" value="Pagina Principal"/>
             </center>
     </body>

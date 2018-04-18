@@ -35,6 +35,7 @@
         %>	
           
         <div class="alert alert-success" role="alert">Participante Borrado</div>    
-        <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button>
+        <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button></a>
+        <a href="participante.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Gestion Participantes</button></a>
     </body>
 </html>
