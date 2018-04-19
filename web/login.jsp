@@ -20,7 +20,7 @@
     </head>
     <body>
         <%
-          
+
           HashMap<String, String> login = new HashMap();
 
           login.put("admin", "admin");
@@ -32,6 +32,7 @@
 
           if (login.containsKey(nombre)) {
             if (login.get(nombre).equals(contraseña)) {
+              session.setAttribute("nombre", nombre);
               response.sendRedirect("principal.jsp");
             } else {
               out.println("<div class='alert alert-success' role='alert'>Contraseña incorrecta</div>");
@@ -41,7 +42,6 @@
             out.println("<div class='alert alert-success' role='alert'>El usuario no existe</div>");
             out.println("<a href='index.jsp' class='btn btn-primary'><span class='glyphicon glyphicon-home'></span> Login</button></a>");
           }
-
         %>
     </body>
 </html>
