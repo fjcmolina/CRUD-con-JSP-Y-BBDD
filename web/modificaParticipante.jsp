@@ -55,7 +55,7 @@
         <script src="js/bootstrap.min.js"></script>
 
     <center>
-        <a href="index.jsp"><span class="glyphicon glyphicon-home"></span> Página principal</button>
+        <a href="principal.jsp"><span class="glyphicon glyphicon-home"></span> Página principal</button>
     </center>
 </body>
 </html>

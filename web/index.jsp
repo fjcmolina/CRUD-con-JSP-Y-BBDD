@@ -1,15 +1,13 @@
 <%-- 
     Document   : index
-    Created on : 10-abr-2018, 10:15:01
+    Created on : 19-abr-2018, 8:20:17
     Author     : Francis
 --%>
-<%@page import="java.util.Scanner"%>
-<%@page import="java.util.HashMap"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection"%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Map"%>
+<%@page import="java.util.HashMap"%>
+<%@page import="java.util.Scanner"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,32 +20,28 @@
         <link href="estilo2.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="wrapper">
-
-            <div id="header" > 
-                <div id="titulo">World Surf League</div>
-            </div>
-
-            <div id="nav">
-                <a href="competicion.jsp">Competiciones </a> <a href="participante.jsp">Participantes</a>
-            </div>
-
-            <div id="main">
-                <h3>¿Qué es Wsl?</h3>
-                <p>Es el campeonato mundial de surf, que organiza varios eventos donde los clasificados para estas pruebas compiten alrededor del mundo<p>
-
-                <h3>¿Qué puedo hacer en esta pagina?</h3>
-
-                <p>En esta pagina podras administrar las competiciones y participantes que estan calsificados en ellas mediante las pestañas de arriba</p>
-                <center>
-                    <img src="imagenes/wsl.jpg" >
-                </center>
-
-            </div>
-
-
-
-        </div>
+        <h1>LOGIN</h1>
+        <form method="post" action="login.jsp">
+            <center>
+                <table border="1" width="30%" cellpadding="10">
+                    <tr>
+                        <td>Usuario</td>
+                        <td><center><input type="text" name="usuario" />
+                                          
+                    </center></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña</td>
+                        <td><center><input type="password" name="contraseña" value="" /></center></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><center><input type="submit" value="Acceder" /></center></td>
+                    </tr>
+                </table>
+            </center>
+        </form>
 
     </body>
 </html>
+

@@ -122,7 +122,7 @@
             </div>
             <center>
 
-                <input type="button" onclick="location.href = 'index.jsp';" value="Pagina Principal"  />
+                <input type="button" onclick="location.href = 'principal.jsp';" value="Pagina Principal"  />
             </center>
 
     </body>

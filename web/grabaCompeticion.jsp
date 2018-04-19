@@ -43,7 +43,7 @@
 
         <div class="alert alert-success" role="alert">Competicion Añadida</div>    
 
-        <a href="index.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button></a>
+        <a href="principal.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span> Página principal</button></a>
 
     <a href="competicion.jsp" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span>Gestion Competicion</button</a>
 </body>
