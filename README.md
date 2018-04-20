@@ -21,7 +21,7 @@ Gestion de competiciones y participantes de la misma
  
    Modfica los participantes:
    
-    ![ModificarParticipantes](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/modificaParticipante.PNG)
+   ![ModificarParticipantes](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/modificaParticipante.PNG)
 
 
 
