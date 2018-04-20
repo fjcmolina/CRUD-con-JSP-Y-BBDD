@@ -11,6 +11,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="estilo2.css" rel="stylesheet"/>
+        <link rel="shortcut icon" type="image/x-icon" href="wslfavicon.ico" />
+
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -19,6 +21,8 @@
         <title>WSL</title>
     </head>
     <body>
+        
+        
         <%
 
           HashMap<String, String> login = new HashMap();
@@ -28,12 +32,13 @@
           login.put("francis", "francis");
 
           String nombre = request.getParameter("usuario");
-          String contraseña = request.getParameter("contraseña");
+          String contraseña = request.getParameter("contrasena");
 
           if (login.containsKey(nombre)) {
             if (login.get(nombre).equals(contraseña)) {
               session.setAttribute("nombre", nombre);
               response.sendRedirect("principal.jsp");
+
             } else {
               out.println("<div class='alert alert-success' role='alert'>Contraseña incorrecta</div>");
               out.println("<a href='index.jsp' class='btn btn-primary'><span class='glyphicon glyphicon-home'></span> Login </button></a>");
@@ -43,5 +48,6 @@
             out.println("<a href='index.jsp' class='btn btn-primary'><span class='glyphicon glyphicon-home'></span> Login</button></a>");
           }
         %>
+        
     </body>
 </html>

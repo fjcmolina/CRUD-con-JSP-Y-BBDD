@@ -4,6 +4,7 @@
     Author     : Francis
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -21,6 +22,8 @@
     </head>
     <body>
         <% request.setCharacterEncoding("UTF-8");%>
+         
+        
         <div class="container">
             <br><br>
             <div class="panel panel-info">
@@ -42,7 +45,7 @@
                         <label>&nbsp;&nbsp;IdParticipante:&nbsp;</label><input type="text" size="5" name="IdParticipante" value="<%= request.getParameter("IdParticipante")%>">
                     </div>
                     <hr>
-                    &nbsp;&nbsp;<a href="index.jsp" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span>Cancelar</a>
+                    &nbsp;&nbsp;<a href="principal.jsp" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span>Cancelar</a>
                     <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span>Aceptar</button><br><br>
                 </form>
 
