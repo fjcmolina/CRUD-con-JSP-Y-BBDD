@@ -3,7 +3,7 @@
 Gestion de competiciones y participantes de la misma
 
 # LOGIN
-   ![Login](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/login.PNG)
+   ![Login](https://github.com/fjcmolina/CRUD-con-JSP-Y-BBDD/blob/master/Imagenes/Login.PNG)
 
    
 
