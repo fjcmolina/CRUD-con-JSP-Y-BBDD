@@ -33,7 +33,7 @@
           String actualizacion = "UPDATE competicion SET "
             + "NombreCompeticion='" + request.getParameter("NombreCompeticion")
             + "', LugarCompeticion='" + request.getParameter("LugarCompeticion")
-            + "', IdParticipante='" + request.getParameter("IdParticipante") + "'"
+            + "', idParticipante='" + request.getParameter("idParticipante") + "'"
             + ", NumeroParticipantes='" + Integer.valueOf(request.getParameter("NumeroParticipantes"))
             + "' WHERE idCompeticion='" + request.getParameter("idCompeticion") + "'";
 
